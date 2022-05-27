@@ -175,7 +175,7 @@ app.get("/docs", function(req1, res1) {
     const token = JSON.parse(content).access_token;
 
     axios
-      .get("https://www.googleapis.com/drive/v3/files?corpora=user&includePermissionsForView=published&q=mimeType%20%3D%20'application%2Fvnd.google-apps.document'&key=AIzaSyDZHo533A3aaJ-xqEHV9iCe9v7_GAdYEhI", {
+      .get("https://www.googleapis.com/drive/v3/files?corpora=user&includePermissionsForView=published&q=mimeType%20%3D%20'application%2Fvnd.google-apps.document'&key=process.env.API_KEY", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -200,7 +200,7 @@ app.get("/file/:fileId", function(req1, res1) {
 
 
   const fileId = req1.params.fileId;
-  const url = "https://www.googleapis.com/drive/v3/files/" + fileId + "/export?mimeType=text%2Fhtml&key=AIzaSyDZHo533A3aaJ-xqEHV9iCe9v7_GAdYEhI";
+  const url = "https://www.googleapis.com/drive/v3/files/" + fileId + "/export?mimeType=text%2Fhtml&key=process.env.API_KEY";
 
   fs.readFile('token.json', (err, content) => {
     if (err) return console.log('Error loading client secret file:', err);
