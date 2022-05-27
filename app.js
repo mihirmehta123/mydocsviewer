@@ -113,7 +113,7 @@ app.get("/", function(req, res) {
   });
 
 
-  app.get("/index/", function(req, res) {
+  app.get("/index", function(req, res) {
 
     const code = req.query.code;
 
