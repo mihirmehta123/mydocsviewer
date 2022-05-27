@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+      <iframe src="" title="" id="doc-view" align="middle"></iframe>
+
+
+    <div class="sidebar">
+      <h3>Select a document to view</h3>
+      <% for(let i=0; i<files.length ; i++){ %>
+      <a href="#" class="doc-links" id="<%= files[i].id %>"> <%= files[i].name %> </a><br />
+      <% } %>
+    </div>
+
+    <script src="js/docs.js" charset="utf-8"></script>
+
+  </body>
+</html>

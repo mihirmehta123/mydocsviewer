@@ -1,0 +1,43 @@
+body{
+  font-family: Helvetica, Sans-Serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.login-div{
+  position: relative;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  margin-top: 20%;
+}
+
+h1{
+  margin:0;
+}
+
+
+
+.typed-out{
+
+  overflow: hidden;
+  border-right: 3px solid #4285F4;
+  white-space: nowrap;
+  width: 0;
+  animation:
+  typing 1.5s forwards,
+  blink-caret 0.75s step-end infinite;
+  margin-bottom: 20px;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #4285F4; }
+}
