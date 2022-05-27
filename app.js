@@ -4,7 +4,7 @@ const axios = require('axios');
 const app = express();
 
 
-app.listen(process.env.port || 3000, function(req, res) {
+app.listen(process.env.PORT || 3000, function(req, res) {
   console.log("Server started at port 3000");
 
 });
