@@ -56,7 +56,7 @@ function client(credentials, callback) {
     client_secret,
     client_id,
     redirect_uris
-  } = JSON.stringify(credentials.installed);
+  } = credentials.installed;
   const oAuth2Client = new google.auth.OAuth2(
     client_id, client_secret, redirect_uris[0]);
   return oAuth2Client;
@@ -122,7 +122,7 @@ app.get("/", function(req, res) {
         client_secret,
         client_id,
         redirect_uris
-      } = JSON.stringify(credentials.installed);
+      } = credentials.installed;
       const oAuth2Client = new google.auth.OAuth2(
         client_id, client_secret, redirect_uris[0]);
 
