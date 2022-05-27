@@ -1,7 +1,7 @@
 {
-  "name": "spacenos_assessment",
+  "name": "My Docs Viewer ",
   "version": "1.0.0",
-  "description": "Spacenos Internship Assessment",
+  "description": "Internship Assessment",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
